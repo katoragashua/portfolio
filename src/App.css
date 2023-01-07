@@ -1,0 +1,27 @@
+.background {
+  /* background: url(./images/portfolio_bg6.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  width: 100%;
+}
+
+.app {
+  background: rgb(55, 25, 2);
+  
+  background: #0f172af4;
+  box-shadow: 1px 1px 5px grey;
+  /* background: #f2f4f800; */
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* HOME */
+.hero {
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Rajdhani", sans-serif; */
+  /* font-family: "Rubik", sans-serif; */
+  /* font-family: "Space Grotesk", sans-serif; */
+  /* font-family: "Urbanist", "sans-serif"; */
+}
