@@ -1,1 +1,1 @@
-##A Portfolio website for Kator Agashua
+A Portfolio website for Kator Agashua
