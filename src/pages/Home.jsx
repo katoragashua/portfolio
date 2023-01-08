@@ -8,9 +8,9 @@ const Home = (props) => {
 
   return (
     <div className="home-page">
-      <section className="hero grid xl:grid-cols-2 place-items-start gap-8 justify-between">
+      <section className="hero grid xl:grid-cols-2 place-items-center gap-8 justify-between">
         <div className="intro">
-          <h2 className="greeting" data-shadow={translations[current].greeting}>
+          <h2 className="greeting text-light-slate" data-shadow={translations[current].greeting}>
             {translations[current].greeting} 👋🏾, {translations[current].art}{" "}
           </h2>
           <span className="name font-extrabold xl:text-4xl" >
@@ -57,7 +57,7 @@ const Home = (props) => {
   </svg>*/}
 
           <img
-            src="./images/peep-46.png"
+            src="./images/peep-standing-11.svg"
             className="dev-image w-[90%] z-60"
             alt="animated developer image"
           />

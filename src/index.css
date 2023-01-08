@@ -4,7 +4,7 @@
 
 :root {
   font-family: Helvetica, sans-serif, Avenir, Inter, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #040f16;
@@ -19,7 +19,7 @@
 }
 
 .home-links {
-  @apply text-4xl text-halcyon-green
+  @apply text-3xl text-halcyon-green hover:bg-halcyon-green hover:bg-opacity-10 ease-in-out hover:border border-solid border-halcyon-green hover:rounded-[4px] p-1
 }
 
 .hero {
