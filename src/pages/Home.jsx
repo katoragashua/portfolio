@@ -1,21 +1,61 @@
+import { useEffect, useRef, useState } from "react";
 import useTranslation from "../useTranslation";
 import { Link } from "react-router-dom";
 import "../index.css";
+import Typewriter from "typewriter-effect";
+
+const TypewriterComponent = () => {
+  return (
+    <Typewriter
+      options={{
+        strings: ["Kator Agashua"],
+        autoStart: true,
+        loop: true,
+      }}
+    />
+  );
+};
 
 const Home = (props) => {
   const { lang, translations, count } = useTranslation();
   const current = Object.keys(translations).find((key) => key === lang[count]);
+  const nameRef = useRef(null);
+
+  const [name, setName] = useState("");
+
+  // useEffect(() => {
+  //   const printName = (i, word) => {
+  //     let text = "";
+  //     if (i > word.length - 1) {
+  //       return;
+  //     } else {
+  //       setTimeout(() => {
+  //         text = word[i];
+  //         nameRef.current.textContent += text;
+  //         i++;
+  //         printName(i, word);
+  //       }, 100);
+  //     }
+  //   };
+  //   printName(0, "Kator Agashua");
+  // }, []);
 
   return (
     <div className="home-page">
       <section className="hero grid xl:grid-cols-2 place-items-center gap-8 justify-between">
         <div className="intro">
-          <h2 className="greeting text-light-slate" data-shadow={translations[current].greeting}>
+          <h2
+            className="greeting text-light-slate text-[2rem]"
+            data-shadow={translations[current].greeting}
+          >
             {translations[current].greeting} 👋🏾, {translations[current].art}{" "}
           </h2>
-          <span className="name font-extrabold xl:text-4xl" >
-            KATOR AGASHUA
-          </span>
+          <h1
+            className="name font-extrabold xl:text-6xl text-[gold]"
+            ref={nameRef}
+          >
+            <TypewriterComponent />
+          </h1>
           {}
           <h2 className="intro-paragraph">
             I am a Frontend Developer and Web Designer from Nigeria.
@@ -43,7 +83,7 @@ const Home = (props) => {
           </h2>
           {/* <hr /> */}
         </div>
-        <div className="hero-image relative z-0 bg-[#8892b0] rounded-sm backdrop-blur-sm">
+        <div className="hero-image relative z-0  rounded-3xl scale-90">
           {/* <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +97,7 @@ const Home = (props) => {
   </svg>*/}
 
           <img
-            src="./images/peep-standing-11.svg"
+            src="./images/peep-46.svg"
             className="dev-image w-[90%] z-60"
             alt="animated developer image"
           />

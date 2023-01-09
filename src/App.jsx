@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="background">
       <P5Sketch />
-      <div className="app grid gap-16 text-2xl p-4 font-urbanist text-[#a8b2d1] xl:p-8 xl:text-2xl xl:px-12">
+      <div className="app grid gap-16 text-2xl px-4 font-urbanist text-[#a8b2d1] xl:text-2xl xl:px-12">
         <Header />
         {/* <Nav /> */}
         <main className="main-content container">
