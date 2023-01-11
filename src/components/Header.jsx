@@ -14,7 +14,7 @@ const Header = (props) => {
   console.log(clicked);
   return (
     <header className="header-component">
-      <div className="container header-container flex justify-between items-baseline relative py-8">
+      <div className="container header-container flex justify-between items-baseline relative py-4 pt-8">
         <div className="logo-div">
           {/* <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -29,7 +29,7 @@ const Header = (props) => {
             />
           </svg> */}
           {/* <img src="./images/logo.svg" alt=""  className="logo"/> */}
-          <h1>Katoragashua</h1>
+          <h1 className="text-halcyon-green">Katoragashua</h1>
         </div>
         <div className="location text-slate">
           <h2 data-location={currentPage}>{currentPage}</h2>

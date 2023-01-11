@@ -15,10 +15,12 @@
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  /* outline: solid 1px red; */
 }
 
 .home-links {
-  @apply text-3xl text-halcyon-green hover:bg-halcyon-green hover:bg-opacity-10 hover:border border-solid border-halcyon-green hover:rounded-[4px] p-1 transition-all ease-in-out duration-200;
+  @apply text-3xl text-halcyon-green hover:bg-halcyon-green hover:bg-opacity-10 hover:border border-solid border-halcyon-green hover:rounded-[4px] p-[1px] transition-all ease-in-out duration-200;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .hero {
@@ -55,22 +57,20 @@
 
 
 .social {
-  padding-right: 1em;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  gap: 1em;
   position: relative;
   width: max-content;
-  height: max-content;
+  height: max-content; */
 }
 
-/* .social::before {
-  position: absolute;
+.social::before {
   content: "";
-  top: 40%;
-  left: 100%;
-  border-bottom: solid 1px;
-  width: 50%;
-} */
+  position: absolute;
+  bottom: -100%;
+  left: 50%;
+  border-left: solid 1px ;
+  height: 80%
+}
 
 

@@ -25,7 +25,7 @@ const Nav = (props) => {
       ref={slideInRef}
     >
       <div
-        className="close absolute top-8 right-8 cursor-pointer border-2 border-halcyon-green border-x-indigo-500 rounded-full"
+        className="close absolute top-8 right-8 cursor-pointer border-[3px] border-halcyon-green border-x-indigo-500 rounded-full"
         onClick={handleClicked}
       >
         {close}

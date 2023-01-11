@@ -9,6 +9,7 @@
   background: rgba(136, 146, 176, 0.9);
   background: #371902;
   background: rgba(15, 23, 42, 0.902);
+  background: rgba(10, 25, 47, 0.916);
   box-shadow: 1px 1px 5px grey;
   -webkit-backdrop-filter: blur(10px);
 }
@@ -35,7 +36,7 @@
 }
 
 .nav {
-  border: #64ffda 1px solid;
+  border: #64ffda 3px solid;
   border-top: none;
 }
 

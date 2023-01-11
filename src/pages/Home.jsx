@@ -3,6 +3,7 @@ import useTranslation from "../useTranslation";
 import { Link } from "react-router-dom";
 import "../index.css";
 import Typewriter from "typewriter-effect";
+import ReactCountryFlag from "react-country-flag";
 
 const TypewriterComponent = () => {
   return (
@@ -42,7 +43,7 @@ const Home = (props) => {
 
   return (
     <div className="home-page">
-      <section className="hero grid xl:grid-cols-2 place-items-center gap-8 justify-between">
+      <section className="hero grid xl:grid-cols-2 place-items-center gap-8 justify-between ">
         <div className="intro">
           <h2
             className="greeting text-light-slate text-[2rem]"
@@ -58,7 +59,16 @@ const Home = (props) => {
           </h1>
           {}
           <h2 className="intro-paragraph">
-            I am a Frontend Developer and Web Designer from Nigeria.
+            I am a Frontend Developer from Nigeria.{" "}
+            <ReactCountryFlag
+              countryCode="NG"
+              svg
+              style={{
+                width: "2em",
+                height: "2em",
+              }}
+              title="US"
+            />
           </h2>
           <h2 className="intro-paragraph">
             You can see my{" "}
@@ -83,7 +93,7 @@ const Home = (props) => {
           </h2>
           {/* <hr /> */}
         </div>
-        <div className="hero-image relative z-0  rounded-3xl scale-90">
+        <div className="hero-image flex justify-center relative z-0  rounded-3xl w-full">
           {/* <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +108,7 @@ const Home = (props) => {
 
           <img
             src="./images/peep-46.svg"
-            className="dev-image w-[90%] z-60"
+            className="dev-image w-[80%] "
             alt="animated developer image"
           />
         </div>
