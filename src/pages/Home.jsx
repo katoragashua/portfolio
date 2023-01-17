@@ -9,7 +9,7 @@ const TypewriterComponent = () => {
   return (
     <Typewriter
       options={{
-        strings: ["KATOR AGASHUA"],
+        strings: ["Frontend Developer", "Web Designer"],
         autoStart: true,
         loop: true,
       }}
@@ -23,16 +23,16 @@ const Home = (props) => {
 
   return (
     <div className="home-page">
-      <section className="hero grid xl:grid-cols-2 place-items-center gap-8 justify-between ">
+      <section className="hero grid xl:grid-cols-2 items-center gap-12 justify-between ">
         <div className="intro">
           <h2
             className="greeting text-lighter-slate text-[2rem]"
             data-shadow={translations[current].greeting}
           >
-            {translations[current].greeting} 👋🏾, {translations[current].art}{" "}
+            {translations[current].greeting}  👋🏾, {translations[current].art}{" "}
           </h2>
           <h1 className="name font-extrabold xl:text-6xl text-lighter-slate">
-            <TypewriterComponent />
+            KATOR AGASHUA
           </h1>
           {}
           <h2 className="intro-paragraph text-light-slate">
@@ -62,15 +62,21 @@ const Home = (props) => {
             me here.
           </h2>
           <h2 className="intro-paragraph">
-            If you'd like to have a chat you can{" "}
             <Link to="contact">
               <span className="home-links">CONTACT</span>
             </Link>{" "}
-            me.
+            me, if you'd like to have a chat.
           </h2>
           {/* <hr /> */}
+
+          <a href="" className="">
+            {" "}
+            <span className="resume-btn px-4 py-2 rounded-md border-[1px] border-halcyon-green text-halcyon-green inline-block my-8 transition-all ease-in-out duration-200 hover:bg-halcyon-green hover:bg-opacity-20">
+              Resume
+            </span>
+          </a>
         </div>
-        <div className="hero-image flex justify-center relative z-0  rounded-3xl w-full">
+        <div className="hero-image z-0 w-full">
           {/* <svg
             viewBox="0 0 200 200"
             xmlns="http://www.w3.org/2000/svg"
@@ -82,12 +88,13 @@ const Home = (props) => {
               transform="translate(100 100)"
             />
   </svg> */}
-
-          <img
-            src="./images/peep-46.svg"
-            className="dev-image w-[80%] "
-            alt="animated developer image"
-          />
+          <div className="dev-div w-[65%] m-auto relative">
+            <img
+              src="./images/peep-46.svg"
+              className="dev-image relative top-[10px] self-end hover:-translate-y-6"
+              alt="animated developer image"
+            />
+          </div>
         </div>
       </section>
     </div>

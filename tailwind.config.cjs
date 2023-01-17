@@ -13,10 +13,11 @@ module.exports = {
       urbanist: ["Urbanist", "sans-serif"],
     },
     colors: {
-      "slate": "#8892b0",
+      slate: "#8892b0",
       "light-slate": "#a8b2d1",
       "lighter-slate": "#ccd6f6",
-      "halcyon-green": "#64ffda"
+      "halcyon-green": "#64ffda",
+      "halcyon-overlay": "rgba(102, 255, 219, 0.3)",
     },
   },
   plugins: [],

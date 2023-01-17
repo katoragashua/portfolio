@@ -5,7 +5,7 @@
 :root {
   font-family: Helvetica, sans-serif, Avenir, Inter, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  /* line-height: 24px; */
   font-weight: 400;
   color: #040f16;
 }
@@ -16,6 +16,15 @@
   padding: 0;
   line-height: 1.5;
   /* outline: solid 1px red; */
+}
+
+h2,
+h1,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
 .home-links {
@@ -33,18 +42,52 @@
   font-size: 3.5rem;
   color: transparent;
   position: relative;
-  background: rgb(100 255 218);
-  background: rgb(100 255 218);
-  /* background-image: url(./images/peep-46.png); */
-  background-position: center;
+  background: rgba(102, 255, 219, 0.5);
+  background: rgb(136, 146, 176);
+  background: linear-gradient(
+    0deg,
+    rgba(136, 146, 176, 1) 50%,
+    rgba(168, 178, 209, 1) 50%
+  );
   background-clip: text;
+
+  /* -webkit-text-stroke: 1px #64ffda; */
   /* font-family: "Space Grotesk", sans-serif; */
-  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Montserrat", sans-serif;
   /* font-family: "Poppins", sans-serif; */
   /* font-family: "Rajdhani", sans-serif; */
-  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: "Urbanist", sans-serif;
   /* font-weight: bold; */
+}
 
+.skills {
+  position: relative;
+  width: 200%;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  animation: side-scroll 20s linear infinite;
+}
+
+@keyframes side-scroll {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+
+
+.dev-div {
+  background: #d0e2ffcc; 
+  border-radius: 92% 56% 72% 68%/ 62% 42% 96% 78%;
+}
+
+.dev-image {
+  width: 100%;
+  transition: all .5s ease-in .1s; 
 }
 
 /* .name::before {
@@ -60,13 +103,14 @@
   width: 100%;
 } */
 
-
 .social {
-  /* display: flex;
+  position: fixed;
+  left: 5%;
+  bottom: 20%;
+  display: flex;
   align-items: center;
-  position: relative;
-  width: max-content;
-  height: max-content; */
+  flex-direction: column;
+  gap: 1em;
 }
 
 .social::before {
@@ -74,8 +118,6 @@
   position: absolute;
   bottom: -100%;
   left: 50%;
-  border-left: solid 1px ;
-  height: 80%
+  border-left: solid 1px;
+  height: 80%;
 }
-
-

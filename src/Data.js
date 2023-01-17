@@ -1,0 +1,42 @@
+const data = [
+  {
+    id: 0,
+    name: "Photo-Kasua",
+    img: "",
+    stack: ["React", "React Router", "RESTful APIs", "Context API"],
+    gitHub: "",
+    live: "",
+  },
+  {
+    id: 1,
+    name: "Photo-Kasua",
+    img: "",
+    stack: ["React", "React Router", "RESTful APIs", "Context API"],
+    gitHub: "",
+    live: "",
+  },
+  {
+    id: 2,
+    name: "Photo-Kasua",
+    img: "",
+    stack: ["React", "React Router", "RESTful APIs", "Context API"],
+    gitHub: "",
+    live: "",
+  },
+  {
+    id: 3,
+    name: "Photo-Kasua",
+    img: "",
+    stack: ["React", "React Router", "RESTful APIs", "Context API"],
+    gitHub: "",
+    live: "",
+  },
+  {
+    id: 4,
+    name: "Photo-Kasua",
+    img: "",
+    stack: ["React", "React Router", "RESTful APIs", "Context API"],
+    gitHub: "",
+    live: "",
+  },
+];

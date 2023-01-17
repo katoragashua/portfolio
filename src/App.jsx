@@ -19,10 +19,10 @@ function App() {
   return (
     <div className="background">
       <P5Sketch />
-      <div className="app grid gap-8 text-2xl px-4 font-urbanist text-[#a8b2d1] xl:text-2xl xl:px-20">
+      <div className="app grid gap-20 text-xl  font-urbanist text-lighter-slate xl:text-2xl ">
         <Header />
         {/* <Nav /> */}
-        <main className="main-content container">
+        <main className="main w-[90%] m-auto xl:px-20 relative">
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="about" element={<About />} />
@@ -30,12 +30,13 @@ function App() {
             <Route path="resume" element={<Resume />} />
             <Route path="contact" element={<Contact />} />
           </Routes>
+          <div className="social">
+            <a href="">{twitter}</a>
+            <a href="">{linkedin}</a>
+            <a href="">{github}</a>
+          </div>
         </main>
-        <div className="social p-2 flex flex-col items-center gap-[1.5rem] fixed left-[0.5rem] bottom-40">
-          <a href="">{twitter}</a>
-          <a href="">{linkedin}</a>
-          <a href="">{github}</a>
-        </div>
+
         <Footer />
       </div>
     </div>

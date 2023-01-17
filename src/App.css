@@ -7,10 +7,12 @@
 
 .app {
   background: #8892b0e6;
-  background: rgba(15, 23, 42, 0.902);
-  background: rgba(10, 25, 47, 0.916);
-  box-shadow: 1px 1px 5px grey;
+  background: #0f172ae6;
+  background: rgba(10, 25, 47, 0.95);
+  /* background: rgba(100, 255, 219, 0.8); */
   -webkit-backdrop-filter: blur(10px);
+  margin: 0;
+  padding: 0;
 }
 
 .greeting {
@@ -40,5 +42,5 @@
 }
 
 .ease-in {
-  transition: all .5s ease-in .2s;
+  transition: all .5s ease-in .1s;
 }
